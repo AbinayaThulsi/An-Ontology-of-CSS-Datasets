@@ -1,0 +1,887 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/"
+     xml:base="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29">
+        <created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-16T22:20:40</created>
+        <ontologyOfCSSDatasets>This Ontology was developed to analyse and comprehend the CSS datasets from a diverse range of social networking and online platforms along with their characteristics. The outcome of this ontology will provide a structure and systematic method to researchers for assessing the datasets in many ways. This up-to-date ontology will act as a knowledge representation framework which can serve the research community. Some of these services are addressing the complex characteristics of CSS datasets, facilitating collaboration, enhancing transparency and supporting future CSS research endeavors etc.</ontologyOfCSSDatasets>
+        <title xml:lang="en">An Ontology of CSS datasets</title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/created -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/created"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/ontologyOfCSSDatasets -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/ontologyOfCSSDatasets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/title -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/hasCharacteristics -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/hasCharacteristics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/hasDataDumps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/hasDataDumps">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/GitHub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Wikipedia"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataDumps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/hasDataSupplements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/hasDataSupplements"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPathName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPathName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPath"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSSDatasetName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSSDatasetName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSSDatasetType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSSDatasetType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataCollectionPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataCollectionPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DatasetAccessPath -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DatasetAccessPath">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DatasetDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DatasetDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DatasetName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DatasetName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PublicationYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PublicationYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Source -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Source">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Subject -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Subject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Title">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/UseOrScope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/UseOrScope">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/VolumeOrSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/VolumeOrSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataSupplementCharacteristics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPath"/>
+        <rdfs:comment xml:lang="en">One of the evaluation criteria of access path</rdfs:comment>
+        <rdfs:label xml:lang="en">API</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+        <rdfs:comment xml:lang="en">Technical means to access data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Access Path</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AnonymizationRe-IdentificationRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AnonymizationRe-IdentificationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+        <rdfs:comment xml:lang="en">Risk of user identity re-identification from anonymized data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Anonymization Re-Identification risks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataFormat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAccessibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAccessibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAnonymization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAnonymization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAvailability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataDumps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataDumps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPath"/>
+        <rdfs:comment xml:lang="en">Data dump is one of the evaluation criteria of access path offered by the social networking / online platform for data access.</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Dump</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataFormat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataFormat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataShareability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataShareability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/FullAvailability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/FullAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataFormat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/LimitedAvailability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/LimitedAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataUnavailable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataUnavailable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoAnonymizationPolicy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoAnonymizationPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAnonymization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoPaidBenefits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoPaidBenefits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PaidBenefits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoRe-IdentificationRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoRe-IdentificationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AnonymizationRe-IdentificationRisk"/>
+        <rdfs:comment xml:lang="en">An evaluation criteria for denoting the CSS dataset has no user re-identification risks.</rdfs:comment>
+        <rdfs:label xml:lang="en">No Re-Identification Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/OpenAccessibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/OpenAccessibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAccessibility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PaidAccessibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PaidAccessibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAccessibility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PaidBenefits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PaidBenefits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PartialShareability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PartialShareability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataShareability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PlatformInitiatives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PlatformInitiatives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AccessPath"/>
+        <rdfs:comment xml:lang="en">Platform initiatives is one of the evaluation criteria of access path offered by the social networking / online platform for data access</rdfs:comment>
+        <rdfs:label xml:lang="en">Platform Initiatives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RequestedShareability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RequestedShareability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataShareability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RestrictedAccessibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RestrictedAccessibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAccessibility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RestrictedAvailability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RestrictedAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaUnavailable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaUnavailable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Shareable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Shareable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataShareability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Unavailable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Unavailable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAvailability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Unsharable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Unsharable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataShareability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/DataAnonymization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithPaidBenefits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithPaidBenefits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PaidBenefits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithRe-IdentificationRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithRe-IdentificationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/AnonymizationRe-IdentificationRisk"/>
+        <rdfs:comment xml:lang="en">An evaluation criteria for denoting the CSS dataset has user re-identification risks.</rdfs:comment>
+        <rdfs:label xml:lang="en">With Re-Identification Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/SocialNetworkingPlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Characteristics">
+        <rdfs:comment xml:lang="en">Holds the system of characteristics of CSS Datasets</rdfs:comment>
+        <rdfs:label xml:lang="en">Characteristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Facebook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Facebook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/SocialNetworkingPlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/GitHub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/GitHub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/OnlinePlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Instagram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Instagram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/SocialNetworkingPlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/LinkedIn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/LinkedIn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/SocialNetworkingPlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/OnlinePlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/OnlinePlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Reddit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Reddit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/OnlinePlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/SocialNetworkingPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/SocialNetworkingPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/CSS_Datasets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Wikipedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Wikipedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/OnlinePlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Facebook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Facebook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/LimitedAvailability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataUnavailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoPaidBenefits"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoRe-IdentificationRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PartialShareability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PlatformInitiatives"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RestrictedAccessibility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaUnavailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Facebook"/>
+        <hasDataSupplements rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Facebook_DataSupplement"/>
+        <AccessPathName>Advertising API, FORT Analytics API, Data for Good, Social Science One</AccessPathName>
+        <CSSDatasetName>Facebook</CSSDatasetName>
+        <CSSDatasetType>Social Networking Platform</CSSDatasetType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Facebook_DataSupplement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Facebook_DataSupplement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Facebook"/>
+        <DataCollectionPeriod>1st of January and the 31th of December of 2014</DataCollectionPeriod>
+        <DatasetName>Classification and analysis of facebook metrics dataset using supervised classifier</DatasetName>
+        <DatasetName>Facebook Metrics</DatasetName>
+        <PublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</PublicationYear>
+        <Source>Facebook performance metrics of a renowned cosmetic&apos;s brand Facebook page</Source>
+        <Subject>Social Media Analytics, Digital Marketing, and Brand Management, as it involves analyzing performance metrics of brand posts on Facebook to inform managerial decision-making and strategy in online brand building</Subject>
+        <VolumeOrSize>500 posts</VolumeOrSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/GitHub -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/GitHub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/FullAvailability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoRe-IdentificationRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/OpenAccessibility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Shareable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithPaidBenefits"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/GitHub"/>
+        <hasDataSupplements rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/GitHub_DataSupplement"/>
+        <AccessPathName>GitHub API, GHTorrent, GHArchive</AccessPathName>
+        <CSSDatasetName>GitHub</CSSDatasetName>
+        <CSSDatasetType>Social Coding Platform</CSSDatasetType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/GitHub_DataSupplement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/GitHub_DataSupplement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/GitHub"/>
+        <DataCollectionPeriod>Not specified</DataCollectionPeriod>
+        <DatasetName>Mining the Technical Roles of GitHub Users</DatasetName>
+        <PublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</PublicationYear>
+        <Subject>GitHub users&apos; profiles, technical roles, expertise, and relevance for technical recruiters</Subject>
+        <UseOrScope>Aimed at understanding GitHub users&apos; technical roles and expertise</UseOrScope>
+        <VolumeOrSize>total size of the files is 32.8 MB</VolumeOrSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Instagram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Instagram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/LimitedAvailability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataUnavailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoPaidBenefits"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoRe-IdentificationRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PartialShareability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RestrictedAccessibility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaUnavailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Instagram"/>
+        <AccessPathName>Instagram Graph API, Instagram Basic Display API</AccessPathName>
+        <CSSDatasetName>Instagram</CSSDatasetName>
+        <CSSDatasetType>Content Sharing Platfrom</CSSDatasetType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/LinkedIn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/LinkedIn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSV"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/LimitedAvailability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataUnavailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoPaidBenefits"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoRe-IdentificationRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PlatformInitiatives"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/RestrictedAccessibility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaUnavailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Unsharable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/LinkedIn"/>
+        <AccessPathName>LinkedIn API, Economic Graph Initiative</AccessPathName>
+        <CSSDatasetName>LinkedIn</CSSDatasetName>
+        <CSSDatasetType>Professional Networking Platform</CSSDatasetType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Reddit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Reddit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/FullAvailability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/OpenAccessibility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Shareable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithPaidBenefits"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithRe-IdentificationRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Reddit"/>
+        <hasDataSupplements rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Reddit_DataSupplement"/>
+        <AccessPathName>Reddit API</AccessPathName>
+        <CSSDatasetName>Q&amp;A / Knowledge Sharing Platorm</CSSDatasetName>
+        <CSSDatasetName>Reddit</CSSDatasetName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Reddit_DataSupplement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Reddit_DataSupplement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Reddit"/>
+        <DataCollectionPeriod>January 1, 2017, to November 19, 2018</DataCollectionPeriod>
+        <DatasetDescription>A text corpus of lengthy multi-domain social media data from Reddit, used for the identification of stress in social media posts</DatasetDescription>
+        <DatasetName>Dreaddit</DatasetName>
+        <PublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</PublicationYear>
+        <Subject>Posts from five different categories of Reddit communities relating to various forms of stress</Subject>
+        <Title>Dreaddit: A Reddit Dataset for Stress Analysis in Social Media</Title>
+        <UseOrScope>The dataset is intended for use in computational social science research, particularly for identifying and analyzing expressions of stress in social media text.</UseOrScope>
+        <VolumeOrSize>190K posts, with 3.5K total segments from 3K posts labeled for stress analysis</VolumeOrSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Wikipedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Wikipedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/CSV"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/FullAvailability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoPaidBenefits"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/NoRe-IdentificationRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/OpenAccessibility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Shareable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Wikipedia"/>
+        <hasDataSupplements rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Wikipedia_DataSupplement"/>
+        <AccessPathName>Mediawiki API, wikipedia API , Wikidata Query Service</AccessPathName>
+        <CSSDatasetName>Wikipedia</CSSDatasetName>
+        <CSSDatasetType>Online encyclopedia and Text library platform</CSSDatasetType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Wikipedia_DataSupplement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/Wikipedia_DataSupplement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29/Wikipedia"/>
+        <DataCollectionPeriod>The data covers military operations from 1989-2021.</DataCollectionPeriod>
+        <DatasetName>Military Operations with Novel Strategic Technologies (MONSTr) Dataset</DatasetName>
+        <PublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</PublicationYear>
+        <Subject>The dataset focuses on U.S. military operations involving tactical actions like battles, engagements, and strikes conducted to achieve strategic objectives in a political context</Subject>
+        <Title>A Wiki-based Dataset of Military Operations with Novel Strategic Technologies (MONSTr)</Title>
+        <UseOrScope>The data is intended for analyzing various factors associated with the employment of U.S. military force, including when, where, and how these operations occur</UseOrScope>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/FullAvailability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/JSON"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/MetadataAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PaidAccessibility"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/PartialShareability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/SchemaAvailable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithAnonymizationPolicy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithPaidBenefits"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/OCSSD/WithRe-IdentificationRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter)"/>
+        <hasDataSupplements rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter)_DataSupplement"/>
+        <AccessPathName>Twitter Academic API</AccessPathName>
+        <CSSDatasetName>X(Twitter)</CSSDatasetName>
+        <CSSDatasetType>Microblogging Platform</CSSDatasetType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter)_DataSupplement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter)_DataSupplement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abinayathulsi/ontologies/2023/11/untitled-ontology-29#X(Twitter)"/>
+        <DataCollectionPeriod>January to June 2020</DataCollectionPeriod>
+        <DatasetAccessPath>Twitter API search with Academic Research access level</DatasetAccessPath>
+        <DatasetName>COVID-19 and financial markets tweets dataset</DatasetName>
+        <PublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</PublicationYear>
+        <Source>https://doi.org/10.1016/j.dib.2022.108428</Source>
+        <Subject>Social Science</Subject>
+        <Title>Dataset of discourses about COVID-19 and financial markets from Twitter</Title>
+        <UseOrScope>Text mining and sentiment analysis to explore and understand most discussed COVID-19 and financial market-related topics and their effects on peoples&apos; life during the first few months of the pandemic</UseOrScope>
+        <VolumeOrSize>3.7 million tweets</VolumeOrSize>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
